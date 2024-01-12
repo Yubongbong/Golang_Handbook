@@ -116,7 +116,7 @@
   }
   ```
 
-  ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/5230e289-b1b6-47a9-9d10-32c4498a0f06/Untitled.png)
+  ![Untitled](Chapter 18 - 슬라이스.assets/Untitled.png)
 
 ### 여러 값 추가
 
@@ -158,7 +158,7 @@
   }
   ```
 
-  ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/6233e2a7-1e43-4425-a208-d1a7910e9276/Untitled.png)
+  ![Untitled 1](Chapter 18 - 슬라이스.assets/Untitled 1.png)
 
 ### make() 함수를 이용한 선언
 
@@ -170,7 +170,7 @@
   var slice = make([]int, 3)
   ```
 
-  ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/7c97af67-23f1-48e9-bc3f-cb4580414802/Untitled.png)
+  ![Untitled 2](Chapter 18 - 슬라이스.assets/Untitled 2.png)
 
   ```go
   var slice2 = make([]int, 3, 5)
@@ -178,7 +178,7 @@
 
   - slice2는 len:3 cap:5인 슬라이스가 만들어짐
 
-  ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/f3f14ca1-917c-433c-b4d7-fa0df2823d71/Untitled.png)
+  ![Untitled 3](Chapter 18 - 슬라이스.assets/Untitled 3.png)
 
 ### 슬라이스와 배열의 동작 차이
 
@@ -212,7 +212,7 @@
   }
   ```
 
-  ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/86a26043-5476-4d5e-9cae-b2f7dd9e532c/Untitled.png)
+  ![Untitled 4](Chapter 18 - 슬라이스.assets/Untitled 4.png)
 
 ### 동작 차이의 원인
 
@@ -268,7 +268,7 @@ func main() {
 }
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/975c005f-f327-49c5-b477-569e9930a2a6/Untitled.png)
+![Untitled 5](Chapter 18 - 슬라이스.assets/Untitled 5.png)
 
 ### append()를 사용할 때 발생하는 예기치 못한 문제 2
 
@@ -307,7 +307,7 @@ func main() {
 }
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/6e68e024-0924-463e-9377-42771d017683/Untitled.png)
+![Untitled 6](Chapter 18 - 슬라이스.assets/Untitled 6.png)
 
 ## 18.3 슬라이싱
 
@@ -342,7 +342,7 @@ func main() {
 }
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/db92fc21-be8b-4df3-8e82-8f478ddbc035/Untitled.png)
+![Untitled 7](Chapter 18 - 슬라이스.assets/Untitled 7.png)
 
 ### 슬라이싱으로 배열 일부를 가리키는 슬라이스 만들기
 
@@ -371,7 +371,7 @@ slice = append(slice, 500)
 
 - 슬라이싱 기능은 배열뿐 아니라 슬라이스 일부를 집어낼 때도 사용할 수 있음
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/a996fff4-8a27-4193-ad1c-61b397ee88b2/Untitled.png)
+![Untitled 8](Chapter 18 - 슬라이스.assets/Untitled 8.png)
 
 - **처음부터 슬라이싱**
 
@@ -418,7 +418,7 @@ slice2 :=[1:3:4]
 - 앞선 예제에서의 문제 상황을 피하기 위해 항상 다른 배열을 가리키도록 만드는 방법
   - slice1이 가리키는 배열과 똑같은 배열을 복제한 뒤 slice2가 가리키도록 설정
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/67ea3176-6d6e-43b0-980b-5fa715e3dbfc/Untitled.png)
+![Untitled 9](Chapter 18 - 슬라이스.assets/Untitled 9.png)
 
 ```go
 //ch18/ex18.8/ex18.8.go
@@ -441,7 +441,7 @@ func main() {
 }
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/8b07c3fa-1dd5-4335-bbf8-6ab77e66a9d9/Untitled.png)
+![Untitled 10](Chapter 18 - 슬라이스.assets/Untitled 10.png)
 
 - **append() 함수로 코드 개선하기**
 
@@ -493,7 +493,7 @@ func main() {
   }
   ```
 
-  ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/d688cc2b-2b2f-4533-be85-84f99c550955/Untitled.png)
+  ![Untitled 11](Chapter 18 - 슬라이스.assets/Untitled 11.png)
 
   - 이를 이용해서 slice를 복사하는 ex18.8 예제를 다음과 같이 바꿀 수 있음
 
@@ -570,7 +570,7 @@ func main() {
    }
    ```
 
-   ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/cee23b94-fdcc-4043-9293-03948ff92c9c/Untitled.png)
+   ![Untitled 12](Chapter 18 - 슬라이스.assets/Untitled 12.png)
 
 - **append() 함수로 코드 개선하기**
 
@@ -649,7 +649,7 @@ func main() {
   }
   ```
 
-  ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7527f927-e873-488e-982d-13152beacb3a/e142be54-ad7a-4303-b4af-0f4286a0b0ed/Untitled.png)
+  ![Untitled 13](Chapter 18 - 슬라이스.assets/Untitled 13.png)
 
   ❸ []Student를 Students 타입으로 타입 변환한 뒤 sort.Sort() 함수를 호출
 
